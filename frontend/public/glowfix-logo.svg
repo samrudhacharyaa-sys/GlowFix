@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gf-arc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+    <linearGradient id="gf-beam-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FACC15" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#FACC15" stop-opacity="0.0" />
+    </linearGradient>
+    <filter id="gf-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Streetlight Arc above the letter G -->
+  <g class="gf-streetlight-arc">
+    <!-- Light cone shining over G -->
+    <path d="M 33 13 L 23 27 L 43 27 Z" fill="url(#gf-beam-grad)" opacity="0.4" />
+    
+    <!-- Curved Streetlight Arm -->
+    <path d="M 8 36 C 7 20, 11 11, 22 7 C 27 5, 32 6, 35 10" 
+          stroke="url(#gf-arc-grad)" 
+          stroke-width="3.2" 
+          stroke-linecap="round" 
+          fill="none" />
+    
+    <!-- Streetlight Luminaire Head -->
+    <path d="M 32 9 L 39 12 C 40 12.5, 40 13.5, 39 14 L 33 14 C 32 14, 31 13.5, 31 12.5 Z" 
+          fill="#FACC15" 
+          filter="url(#gf-glow)" />
+    
+    <!-- Small bulb dot -->
+    <circle cx="35" cy="14" r="1.8" fill="#FFFBEB" />
+  </g>
+
+  <!-- Brand Typography: "Glow" + "Fix" -->
+  <g font-family="'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="31" letter-spacing="-0.5">
+    <!-- Glow -->
+    <text x="12" y="38" class="gf-text-glow" fill="currentColor">Glow</text>
+    <!-- Fix -->
+    <text x="91" y="38" class="gf-text-fix" fill="#FACC15">Fix</text>
+  </g>
+</svg>

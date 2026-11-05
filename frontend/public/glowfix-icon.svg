@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54" fill="none" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gf-icon-arc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+    <linearGradient id="gf-icon-beam" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FACC15" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#FACC15" stop-opacity="0.0" />
+    </linearGradient>
+    <filter id="gf-icon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background container badge with dark navy / brand blue tone -->
+  <rect width="54" height="54" rx="14" fill="#0F172A" />
+
+  <!-- Light cone shining onto G -->
+  <path d="M 33 13 L 23 29 L 43 29 Z" fill="url(#gf-icon-beam)" opacity="0.45" />
+
+  <!-- Streetlight Curved Arc above G -->
+  <path d="M 8 36 C 7 19, 11 10, 22 6 C 27 4, 32 5, 35 9" 
+        stroke="url(#gf-icon-arc)" 
+        stroke-width="3.2" 
+        stroke-linecap="round" 
+        fill="none" />
+
+  <!-- Streetlight Luminaire / Head -->
+  <path d="M 32 8 L 39 11 C 40 11.5, 40 12.5, 39 13 L 33 13 C 32 13, 31 12.5, 31 11.5 Z" 
+        fill="#FACC15" 
+        filter="url(#gf-icon-glow)" />
+
+  <!-- Bulb glow dot -->
+  <circle cx="35" cy="13" r="1.8" fill="#FFFBEB" />
+
+  <!-- Letter G -->
+  <text x="14" y="41" 
+        font-family="'Plus Jakarta Sans', 'Inter', sans-serif" 
+        font-weight="800" 
+        font-size="34" 
+        letter-spacing="-1" 
+        fill="#FFFFFF">G</text>
+</svg>

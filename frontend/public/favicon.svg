@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54" fill="none">
+  <defs>
+    <linearGradient id="fav-arc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+  </defs>
+
+  <rect width="54" height="54" rx="14" fill="#0F172A" />
+  
+  <!-- Streetlight Arc above G -->
+  <path d="M 8 36 C 7 19, 11 10, 22 6 C 27 4, 32 5, 35 9" 
+        stroke="url(#fav-arc)" 
+        stroke-width="3.5" 
+        stroke-linecap="round" 
+        fill="none" />
+  
+  <path d="M 32 8 L 39 11 C 40 11.5, 40 12.5, 39 13 L 33 13 C 32 13, 31 12.5, 31 11.5 Z" 
+        fill="#FACC15" />
+  <circle cx="35" cy="13" r="2" fill="#FFFBEB" />
+
+  <!-- Letter G in White -->
+  <text x="14" y="41" 
+        font-family="'Plus Jakarta Sans', -apple-system, sans-serif" 
+        font-weight="800" 
+        font-size="34" 
+        fill="#FFFFFF">G</text>
+</svg>
